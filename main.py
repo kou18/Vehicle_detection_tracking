@@ -37,7 +37,6 @@ while (vs.isOpened()):
     ret,frame = vs.read()
     # Start the fps estimator
     fps = FPS().start()
-    timer = cv2.getTickCount()
     frame = imutils.resize(frame,width=500,height=300)
     rgb = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
     if H is None or W is None:
